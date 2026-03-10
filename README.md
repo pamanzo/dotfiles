@@ -20,7 +20,7 @@ sudo pacman -S stow
 
 ### 3. deploy configurations
 ```bash
-stow alacritty hypr lf nvim rofi waybar
+stow alacritty hypr lf nvim rofi waybar zsh
 ```
 
 ### 4. to remove symlinks
