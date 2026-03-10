@@ -1,0 +1,36 @@
+set hidden true
+set ignorecase true
+
+ cmd delete ${{
+     set -f
+     printf "$fx\n"
+     printf "delete?[y/n]"
+     read ans
+     [ $ans = "y" ] && rm -rf $fx
+ }}
+
+cmd mkdir ${{
+    printf "Directory name: "
+    read ans
+    mkdir $ans
+}}
+
+cmd touch ${{
+    printf "File name: "
+    read ans
+    touch $ans
+}}
+
+#mappings
+map DD delete
+map md mkdir
+map t touch
+map <c-j> push 5j
+map <c-k> push 5k
+map J push 5j
+map K push 5k
+
+#movement
+map gd cd ~/Documents
+map gc cd ~/.config
+
