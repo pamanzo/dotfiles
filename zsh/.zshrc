@@ -115,7 +115,7 @@ alias v="nvim"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"  # O bash si usas bash
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
